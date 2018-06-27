@@ -62,7 +62,7 @@ export default {
     },
     created:function(){  
         fetch(getSlides).then((response) => {
-            this.imageUrl = response.data.slides
+            this.imageUrl = response.data.slide
     }),
         fetch(getHotGoods).then((response) => {
             this.hotGoods = response.data.hot
