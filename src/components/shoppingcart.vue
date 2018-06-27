@@ -126,7 +126,6 @@
         chosed(){
             let count = 0
             let b = 0
-            let d = 0
             for (let i in this.cartList) {
                 for (let k of this.cartList[i]) {
                     if (k.checked) {
@@ -271,7 +270,7 @@
                 this.deleteOne = true
             }  
         },
-        popUp(n){
+        popUp(){
             if(this.deleteList.length > 0){
                 this.deletePop = true
                 this.deleteAll = true

@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = 'http://rap2api.taobao.org/app/mock/16648/'
+const baseUrl = 'https://easy-mock.com/mock/5b1fe742f71e07432609360f'
 const getSlides = baseUrl + 'explore/slides'
 const getHotGoods = baseUrl + 'explore/hot'
 const getHotGoodsMore = baseUrl + 'explore/hot/more'
