@@ -14,6 +14,6 @@ export default function fetch(getUrl, params, type='get'){
   if (type === 'get'){
     return axios.get(getUrl, params).then((res) => {
       return res
-    }).catch((error) => {alert(error)})
+    }).catch()
   }
 }
