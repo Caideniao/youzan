@@ -62,7 +62,7 @@ export default {
     },
     created:function(){  
         fetch(getSlides).then((response) => {
-            this.imageUrl = response.data.slide
+            this.imageUrl = response.data.slides
     }),
         fetch(getHotGoods).then((response) => {
             this.hotGoods = response.data.hot
@@ -90,7 +90,7 @@ export default {
     //以下方法一（放created也可）
     //方法二：用setTimeout函数，且设置一定时间后执行
     //方法三：封装成swipe组件，设置v-if，组件内部在mounted之后/或者watch监听prop变化可以获取父组件的异步数据（
-    //注意，created后不可以，猜测子组件先创建后视数据变化再挂载）
+    //注意，created后不可以）
     //方法三: updated，数据请求在created阶段（慎用）
     //方法四：created获取数据，watch监听数据变化，调用nextTick()，dom更新完成后初始化swiper 
 }
