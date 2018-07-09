@@ -5,6 +5,9 @@ const detail = () => import('../components/detail/detail.vue')
 const shoppingcart = () => import('../components/shoppingcart.vue')
 const like = () => import('../pages/like.vue')
 const person = () => import('../pages/person.vue')
+const logIn = () => import('../components/logIn.vue')
+const signUp = () => import('../components/signUp.vue')
+const personInformation = () => import('../components/personInformation.vue')
 
 export default [
     {path:'/',
@@ -50,8 +53,20 @@ export default [
             beforeEnter: (to, from, next) => {
                 store.commit('redirect',3)
                 next()
-              }
+            },
         },
+        {
+            path:'logIn',
+            component:logIn
+        },
+        {
+            path:'signUp',
+            component:signUp
+        },
+        {
+            path:'information',
+            component:personInformation
+        }
     ]
     }
 ]

@@ -4,7 +4,8 @@ Vue.use(Vuex)
 const store = new Vuex.Store ({
     state: {
         cart: {},
-        broswering:0
+        broswering:0,
+        user:null,
     },
     mutations:{
         addCart(state, n) {
@@ -25,7 +26,10 @@ const store = new Vuex.Store ({
         },
         redirect(state, n){
             state.broswering = n
-        }
+        },
+        confirmUser(state,n){
+            state.user = n
+        },
     }
 })
  export default store

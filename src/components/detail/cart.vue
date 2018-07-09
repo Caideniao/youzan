@@ -4,8 +4,7 @@
         <div class="discription">
             <div><img :src="good.shopLogo" alt=""></div>
             <div class="title">
-                <span v-if='good && good.title.length > 24' class="good-title">{{good.title.slice(0,24  )}}...</span>
-                <span v-else>{{good.title}}</span>
+                <span class="good-title">{{good.title}}</span>
                 <p class="good-price">￥{{good.price}}</p>
             </div>
              <span class="cancel" @click="$emit('cancel')">✕</span>
@@ -147,8 +146,13 @@ export default {
             .title{
                 margin: 0 8px;
             .good-title{
+                display: inline-block;
                 width: 80%;
                 margin:0;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+
             }
             .good-price{
                 margin: 0;
