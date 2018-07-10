@@ -20,7 +20,6 @@
 </template>
 
 <script>
-import footerBar from '../components/footer.vue'
 import AV from './leancloud.js'
 export default {
     data(){
@@ -48,7 +47,7 @@ export default {
                 AV.User.logIn(this.account, this.code).then(function (loggedInUser) {
                     that.$store.commit('confirmUser',loggedInUser)
                     that.$router.push({path:'/person'})
-                }, function (error) {
+                }, function () {
                     that.message = '用户名和密码不匹配'
                     that.isComplete = true
                     setTimeout(() => {that.isComplete = false},1500)
