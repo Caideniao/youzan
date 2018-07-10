@@ -32,7 +32,7 @@ export default {
       display: flex;
       justify-content: center;
       img {
-        width: 100%;
+        width: 98vw;
       }
     }
   }

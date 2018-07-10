@@ -136,11 +136,6 @@ export default {
             border-left: 4px solid black;              
     }
 }
-.section-recommend{
-    .swipe{
-        width:98%;  
-    }
-}
 .section-hotGoods{
         display: flex;
         justify-content: space-around;

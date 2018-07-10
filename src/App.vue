@@ -15,6 +15,7 @@ export default {
 <style lang='scss'>
 body{
   margin: 0;
+  -webkit-overflow-scrolling: touch;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
