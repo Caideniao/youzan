@@ -1,6 +1,5 @@
 <template>
    <div class="setion-wrapper">
-       <!-- <header-bar></header-bar> -->
        <div>
            <div class="section-recommend">
                <div class="section-header">

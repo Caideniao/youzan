@@ -22,7 +22,5 @@ body{
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;  
 }
-::-webkit-scrollbar {/*隐藏滚轮*/
-display: none;
-}
+
 </style>

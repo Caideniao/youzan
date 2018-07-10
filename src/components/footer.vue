@@ -43,11 +43,12 @@ export default {
     position: fixed;
     z-index: 10;
     bottom: 0;
-    width: 100%;
+    box-sizing: border-box;
+    width: 100vw;
     background-color: white;
     padding: 5px 0;
     .wrapper{
-        margin-left: -6px;
+        margin-left: 0px;
         display: flex;
         justify-content: space-around;
         .icon {
