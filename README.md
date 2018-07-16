@@ -7,5 +7,6 @@
 Flex+vw/vh+百分比进行页面布局；axios异步获取后台数据；正则检查用户输入；引入Mint-UI实现部分动效；Vue+Vuex实现复杂交互逻辑。
 
 移动端展示：
-<img src='https://github.com/Caideniao/youzan/image/link.png'/>
+<img src='https://github.com/Caideniao/youzan/blob/master/image/link.png'/>
+<img src='https://github.com/Caideniao/youzan/blob/master/image/home.jpg'/>
 
